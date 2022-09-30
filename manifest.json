@@ -1,7 +1,7 @@
 {
     "lang":"ja",
-    "name"            : "Webアプリケーションの名前を入れる",
-    "short_name"      : "Webアプリ名",
+    "name"            : "Bottom Navigation",
+    "short_name"      : "BNV",
     "display"         : "standalone",
     "start_url"       : "https://html-bottom-navigation.vercel.app/",
     "background_color": "#FFFFFF",
