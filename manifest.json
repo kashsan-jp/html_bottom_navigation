@@ -3,7 +3,7 @@
     "name"            : "Webアプリケーションの名前を入れる",
     "short_name"      : "Webアプリ名",
     "display"         : "standalone",
-    "start_url"       : "https://mam-mam.net/javascript/pwa/",
+    "start_url"       : "https://html-bottom-navigation.vercel.app/",
     "background_color": "#FFFFFF",
     "theme_color"     : "#FFFFFF",
     "icons": [
