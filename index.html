@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f69435">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js" defer></script>
+    <!-- <script src="js/main.js" defer></script> -->
+    <!-- <script src="index.js" defer></script> -->
     <title>Document</title>
+    <link rel="manifest" href="manifest.json" >
+    <link rel="serviceWorker" href="serviceworker.js">
+    <link rel="apple-touch-icon"  href="img/icon-192x192.png">
+    <script>
+        //サービスワーカーの登録
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('service-worker.js',{scope: './'})
+          .then(function(reg){
+            console.log('ServiceWorkerの登録成功 スコープ: ', reg.scope);
+          }).catch(function(err){
+            console.log('ServiceWorkerの登録失敗: ', err);
+          });
+        }
+      </script>
 </head>
 <body>
     <header class="header" id="header">
@@ -76,10 +92,33 @@
         <section class="container section section__height" id="contactme">
             <h2 class="section__title">Contactme</h2>
         </section>
-
+ 
     </main>
     <div>
         
     </div>
 </body>
+
+    <script>
+    navigator.serviceWorker.register('sw.js');
+    </script>
+
+    <!-- <script>
+        window.addEventListener("load", () => {
+            registerSW();
+        });
+
+        async function registerSW() {
+            if('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                            .serviceWorker
+                            .register('serviceworker.js');
+                }
+                catch (e){
+                    console.log('SW registration failed')
+                }
+            }
+        }
+    </script> -->
 </html>

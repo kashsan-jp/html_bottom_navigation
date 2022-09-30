@@ -1,0 +1,22 @@
+{
+    "theme_color": "#f69435",
+    "background_color": "#f69435",
+    "display": "standalone",
+    "scope": ".",
+    "start_url": "index.html",
+    "name": "Bottom Navigator",
+    "short_name": "BMN",
+    "description": "Kashsan_jp is fine now!",
+    "icons": [
+        {
+            "src": "img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
